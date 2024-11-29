@@ -135,5 +135,15 @@ body.login-page .css-1px3c36{
 }
 ```
 
+#### ***CSS*** dosyasını oluşturduktan sonra, oluşturduğunuz ***style.css*** dosyasını ***/usr/share/grafana/public/views/index.html*** dosyasına eklemek için şu adımları izleyebilirsiniz:
 
 
+```bash
+nano /usr/share/grafana/public/views/index.html
+```
+Dosyanın ```<head>``` kısmına aşağıdaki satırı ekleyin:
+```html
+  <link rel="stylesheet" href="/public/build/css/style.css">
+```
+Bu satır, oluşturduğunuz style.css dosyasını HTML dosyasına dahil eder.
+ 
